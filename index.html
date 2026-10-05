@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e71927">
+  <meta name="description" content="Uma pausa, um encontro, uma Coca-Cola. Explore este projeto criativo inspirado na bebida que atravessa gerações.">
+  <title>Coca-Cola — O sabor de estar junto</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23e71927'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Georgia' font-style='italic' font-weight='bold' font-size='48' fill='white'%3EC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header">
+    <a class="wordmark" href="#inicio" aria-label="Coca-Cola, início">Coca-Cola<span>®</span></a>
+    <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="navigation" aria-label="Navegação principal">
+      <a href="#sabores">Nossos sabores</a><a href="#momentos">Bons momentos</a><a href="#essencia">Nossa essência</a>
+    </nav>
+    <a class="header-cta" href="#sabores">Encontre seu sabor</a>
+  </header>
+  <main id="conteudo">
+    <section class="hero section-wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ABRA ESPAÇO PARA O QUE É BOM</p>
+        <h1 id="hero-title">O sabor de<br>estar <em>junto.</em></h1>
+        <p class="intro">Os melhores momentos não precisam de muito.<br class="desktop-break"> Boa companhia. Uma pausa. E uma Coca-Cola gelada.</p>
+        <a class="button button-red" href="#sabores">Descubra seu favorito</a>
+        <div class="hero-note"><span class="note-symbol" aria-hidden="true">✳</span><p>O mesmo sabor icônico.<br><strong>Novas histórias todos os dias.</strong></p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-circle" aria-hidden="true"><span>Original</span></div>
+        <span class="spark spark-one" aria-hidden="true">✳</span><span class="spark spark-two" aria-hidden="true">✦</span>
+        <img class="hero-bottle" src="assets/coca-cola-original.png" alt="Garrafa de Coca-Cola Original gelada" width="500" height="800" fetchpriority="high">
+        <div class="round-label">SABOR QUE<br><strong>conecta.</strong><span aria-hidden="true">✦</span></div>
+        <p class="visual-caption">UM CLÁSSICO. INFINITAS CONEXÕES.</p>
+      </div>
+      <div class="hero-bottom"><span>FEITA PARA COMPARTILHAR</span><span>DESDE 1886</span></div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>ABRA A FELICIDADE <span>✳</span> SINTA O MOMENTO <span>✳</span> COMPARTILHE O SABOR <span>✳</span> ABRA A FELICIDADE <span>✳</span></div></div>
+    <section class="flavors section-wrap" id="sabores" aria-labelledby="flavors-title">
+      <div class="section-heading"><div><p class="eyebrow">ENCONTRE A SUA</p><h2 id="flavors-title">Seu momento.<br>Seu <em>sabor.</em></h2></div><p>Do clássico de sempre a uma nova escolha.<br>Tem uma Coca-Cola para acompanhar você.</p></div>
+      <div class="flavor-explorer">
+        <div class="product-stage"><span class="stage-word" aria-hidden="true">Original</span><img id="product-image" src="assets/coca-cola-original.png" alt="Coca-Cola Original" width="500" height="800" loading="lazy"><span class="product-caption">GELADA FICA AINDA MELHOR.</span></div>
+        <div class="product-info">
+          <div class="flavor-tabs" role="tablist" aria-label="Escolha uma Coca-Cola"><button id="tab-original" role="tab" aria-selected="true" aria-controls="product-panel" data-flavor="original">Original</button><button id="tab-zero" role="tab" aria-selected="false" aria-controls="product-panel" tabindex="-1" data-flavor="zero">Sem açúcar</button></div>
+          <div id="product-panel" role="tabpanel" aria-labelledby="tab-original" tabindex="0"><p class="eyebrow" id="product-eyebrow">O CLÁSSICO É SEMPRE UMA BOA IDEIA</p><h3 id="product-title">Coca-Cola<br>Original</h3><p id="product-description">Aquele sabor inconfundível que transforma uma pausa em um bom momento. Combine com sua comida favorita e com quem faz seu dia melhor.</p><div class="product-tags" id="product-tags"><span>Sabor original</span><span>Com açúcar</span></div></div>
+          <a class="text-link" href="#momentos">Inspire seu próximo encontro <span aria-hidden="true">+</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="moments section-wrap" id="momentos" aria-labelledby="moments-title">
+      <div class="section-heading"><div><p class="eyebrow">A VIDA ACONTECE AGORA</p><h2 id="moments-title">O melhor ingrediente?<br><em>A companhia.</em></h2></div><p>Não espere uma grande ocasião.<br>Faça do simples um momento especial.</p></div>
+      <div class="moment-grid"><article class="moment-card picnic"><span class="moment-number">01 / À MESA</span><div><span class="moment-icon" aria-hidden="true">✳</span><h3>Mais conversa.<br>Mais uma fatia.</h3><p>A pizza chega, a conversa rende e ninguém tem pressa de ir embora.</p></div></article><article class="moment-card music"><span class="moment-number">02 / NO SEU RITMO</span><div><span class="moment-icon" aria-hidden="true">♫</span><h3>Dê play no<br>seu momento.</h3><p>Sua música favorita. Seus amigos por perto. O resto pode esperar.</p></div></article><article class="moment-card pause"><span class="moment-number">03 / NA PAUSA</span><div><span class="moment-icon" aria-hidden="true">☀</span><h3>Desconecte.<br>Se reconecte.</h3><p>Troque a correria por uma boa história. Às vezes, uma pausa muda o dia.</p></div></article></div>
+    </section>
+    <section class="essence" id="essencia" aria-labelledby="essence-title"><div class="essence-inner"><p class="eyebrow">ONTEM, HOJE E NO PRÓXIMO ENCONTRO</p><h2 id="essence-title">Algumas coisas<br>nunca saem de <em>moda.</em></h2><p>Um brinde à amizade. À mesa cheia. À alegria de dividir.<br>O mundo muda. O prazer de estar junto continua.</p><a class="button button-white" href="#inicio">Viva esse momento</a><span class="essence-star" aria-hidden="true">✳</span></div></section>
+  </main>
+  <footer class="section-wrap"><div class="footer-top"><a class="wordmark" href="#inicio">Coca-Cola<span>®</span></a><p>Abra. Sinta. Compartilhe.</p><a href="#inicio">Voltar ao início</a></div><div class="footer-bottom"><p>Projeto conceitual de portfólio, sem vínculo com a The Coca-Cola Company.<br>Coca-Cola e suas marcas pertencem aos respectivos titulares.</p><span>FEITO PARA BONS MOMENTOS.</span></div></footer>
+</body>
+</html>
